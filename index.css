@@ -1,0 +1,33 @@
+.topBar{
+    text-align: center;
+    margin-top: 50px;
+    list-style-type: none;
+    color: white;
+}
+.topBar li{
+    display: inline-block;
+    border: 1px solid #0D1623;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 4px 20px;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+#active{
+    background-color: white;
+    color: #0D1623;
+    font-weight: bold;
+}
+
+#inactive{
+    color: white;
+}
+
+#inactive:hover{
+    border: 1px solid white;
+}
+.log-reg{
+    display: inline-block;
+    margin-left: 300px;
+}
