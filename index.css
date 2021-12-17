@@ -1,21 +1,22 @@
 .topBar{
     text-align: center;
-    margin-top: 50px;
     list-style-type: none;
     color: white;
+    padding: 20px 0px;
+    margin-top: 0px;
 }
 .topBar li{
     display: inline-block;
     border: 1px solid #0D1623;
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 4px 20px;
     font-size: 18px;
     font-family: Arial;
 }
 
 #active{
-    background-color: white;
+    background-color: #ddd;
     color: #0D1623;
     font-weight: bold;
 }
@@ -25,9 +26,18 @@
 }
 
 #inactive:hover{
-    border: 1px solid white;
+    border-color: white;
 }
 .log-reg{
     display: inline-block;
-    margin-left: 300px;
+}
+
+.search-button{
+    background-color: #ddd;
+    width: 250px;
+    padding: 10px 20px 10px 40px;
+    font-size: 16px;
+    border: 0px;
+    border-radius: 20px;
+    color: #0D1623;
 }
