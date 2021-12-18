@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>register.html</title>
+    <title>Login</title>
     <link rel="stylesheet" href="login.css">
-    
-    <img src="Foto1.jpg" alt="Cinema Logo" width="150px" height="150px">
+    <link rel="stylesheet" href="index.css">
 
-    <button type="button"> <a href ="index.html">Home</a></button>
-    <br><br><br><br><p1>Enter Your Information</p1><br><br>
+<body style="background-color: #0D1623; font-family:Arial, Helvetica, sans-serif;text-align:center;">
+    <img class="top-img" src="Foto1.jpg" width="100px" style="float: left">
+    <ul class="topBar">
+        <a href="index.html"><li id="inactive">HOME</li></a>
+        <a href="movies.html"><li id="inactive">MOVIES</li></a>
+        <a href="events.html"><li id="inactive">EVENTS</li></a>
+        <li><input class="search-button" type="text" placeholder="Search"></li>
+        <div class="log-reg">
+            <a href="login.html" ><li id="active" >SIGN IN</li></a>
+            <a href="register.html"><li id="inactive">REGISTER</li></a>
+        </div>
+    </ul>
 
+    <h1 style="color: white">Enter your information</h1>
     <hr>
-    <br><br><br>
-
-    <body style="background-color: #0D1623; font-family:Arial, Helvetica, sans-serif;text-align:center;">
-
-    <form>
-        <label style="color:white;" for="adress">     Adress </label><br>
-        <input type="text" placeholder="Enter Adress" id="adress" name="adress" required><br>
+    <form style="margin-top: 50px;">
+        <label style="color:white;" for="adress">     Address </label><br>
+        <input type="text" placeholder="Enter Address" class="input-box" id="adress" name="adress" required><br>
         <label style="color:white;" for="pwd">        Password </label><br>
-        <input type="password" placeholder="Enter Password" id="pwd" name="pwd"><br>
+        <input type="password" placeholder="Enter Password" class="input-box" id="pwd" name="pwd"><br>
 
 
     <form></form>
@@ -29,7 +35,7 @@
     <button type="submit" class="registerbtn"> <a href ="index.html">Login</a></button1>
         <br>
 
-    <p style="text-align:center;font-family:Arial;color:white;font-size:5;padding-top:100px" class="two">Don't have an account ?</p>
+    <p style="text-align:center;font-family:Arial;color:white;font-size:5;padding-top:100px" class="two">Don't have an account?</p>
 
 <a href = "register.html">Sign-up</a>
 <br>
