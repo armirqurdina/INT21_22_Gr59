@@ -3,7 +3,9 @@
     list-style-type: none;
     color: white;
     padding: 20px 0px;
-    margin-top: 0px;
+    height: 100%;
+    margin-top: 15px;
+    margin-left: 50px;
 }
 .topBar li{
     display: inline-block;
@@ -13,9 +15,6 @@
     padding: 4px 20px;
     font-size: 18px;
     font-family: Arial;
-}
-.top-img{
-    border-radius: 10px;
 }
 
 #active{
