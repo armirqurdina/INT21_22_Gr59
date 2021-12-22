@@ -31,7 +31,8 @@
 </head>
 
 <body style="background-color: #0D1623; font-family:Arial, Helvetica, sans-serif;text-align:center;">
-    <div style="display: flex; ">
+
+        <div style="display: flex; ">
         <img class="top-img" src="FIEK_Kino.png" width="10%" style="display: inline-block;">
         <ul class="topBar">
             <a href="index.html"><li id="inactive">HOME</li></a>
@@ -44,46 +45,36 @@
             </div>
         </ul>
     </div>
-
-    <h1 style="color: white">Create an account</h1>
-    <hr>
     
-    <form style="text-align: center; margin-top: 50px;">
-        <label style="color:white;" for="fname">     First Name </label><br>
-        <input type="text" placeholder="Enter First Name" class="input-box" id="fname" name="fname" required><br> 
-        <label style="color:white;" for="lame">       Last Name </label><br>
-        <input type="text" placeholder="Enter Last Name" class="input-box" id="lname" name="lname"  required><br>
-        <label style="color:white;" for="adress">     Address </label><br>
-        <input type="text" placeholder="Enter Address" class="input-box" id="adress" name="adress" required><br>
-        <label style="color:white;" for="pwd">        Password </label><br>
-        <input type="password" placeholder="Enter Password" class="input-box" id="pwd" name="pwd"><br>
-        <label style="color:white;" for="pwd">        Confirm Password </label><br>
-        <input type="password" placeholder="Repeat Password" class="input-box" id="cofirm_password" required><br>
-        <label style="color:white;" for="date">       Date of Birth </label><br>
-        <input type="date" class="input-box" id="date" name="date"><br>
-        <label style="color:white;" for="gender">     Gender </label><br>
-        <div class="custom-select">
-        <select class="input-box" style="text-align:center;">
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Other">Other</option>
-        </select>
+    <form>
+        <div style="background: none; width: 40%; margin: 0 auto; padding: 10px; box-shadow: 0px 0px 20px black; margin-top: 50px;">
+            <div class="main-content">
+                <h1>Create an account</h1><br><br><br>
+                <label for="fname">First name</label><br>
+                <input type="text" placeholder="Enter first name" class="input-box" id="fname" name="fname" required><br> 
+                <label for="lname">Last name</label><br>
+                <input type="text" placeholder="Enter last name" class="input-box" id="lname" name="lname"  required><br>
+                <label for="pwd">Password</label><br>
+                <input type="password" placeholder="Enter password" class="input-box" id="pwd" name="pwd"><br>
+                <label for="confirm_password">Confirm password</label><br>
+                <input type="password" placeholder="Confirm password" class="input-box" id="confirm_password" required><br>
+                <label for="email">Email address</label><br>
+                <input type="text" placeholder="Enter email address" class="input-box" id="email" name="adress" required><br>
+                <label for="date">Date of birth</label><br>
+                <input type="date" class="input-box" id="date" name="date"><br>
+                <label for="gender">Gender</label><br>
+                <select class="input-box" style="height: 42px; background-color: #ddd; width: 424px" id="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select><br>
+                <label for="phone">Phone number</label><br>
+                <input type="tel" placeholder="Enter phone number" class="input-box" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br><br>
+
+                <button type="submit" class="registerbtn"> Register</button><br><br><br>
+                <p class="two">Already have an account? <span><a style="text-decoration: none; color: dodgerblue" href="login.html">Login</a></span></p>
+            </div>
         </div>
-        <br>
-
-        <label style="color:white;" for="phone">Number </label><br>
-        <input type="tel" placeholder="Enter Phone Number" class="input-box" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br>
-
-        <button type="submit" class="registerbtn"> <a href ="index.html">Register</a></button1>
-        <br>
-
-        <p style="text-align:center;font-family:Arial;color:white;font-size:5;padding-top:100px" class="two">Already have an account?</p>
-
-        <a href = "login.html">Login</a>
-        <br>
-        <br>
- </form>   
-
-
+    </form>   
 </body>
 </html>
