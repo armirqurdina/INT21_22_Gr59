@@ -6,91 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIEK Kino</title>
     <link rel="stylesheet" href="index.css">
-    <style>
-     var slideIndex = 1;
-showSlides(slideIndex);
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+      function plusSlides(n) {
+        showSlides(slideIndex += n);x 
+      }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
         
-        
-        
-    </style>
+    </script>
 </head>
 <body style="background-color: #0D1623; color: white;">
-    <div style="display: flex; ">
-        <img class="top-img" src="FIEK_Kino.png" width="10%" style="display: inline-block;">
-        <ul class="topBar">
-            <a href="index.html"><li id="active">HOME</li></a>
-            <a href="movies.html"><li id="inactive">MOVIES</li></a>
-            <a href="events.html"><li id="inactive">EVENTS</li></a>
-            <li><input class="search-button" type="text" placeholder="Search"></li>
-            <div class="log-reg">
-                <a href="login.html" ><li id="inactive" >SIGN IN</li></a>
-                <a href="register.html"><li id="inactive">REGISTER</li></a>
-            </div>
-    </div>
+  <div style="display: flex; ">
+      <img class="top-img" src="FIEK_Kino.png" width="10%" style="display: inline-block;">
+      <ul class="topBar">
+          <a href="index.html"><li id="active">HOME</li></a>
+          <a href="movies.html"><li id="inactive">MOVIES</li></a>
+          <a href="events.html"><li id="inactive">EVENTS</li></a>
+          <li><input class="search-button" type="text" placeholder="Search"></li>
+          <div class="log-reg">
+              <a href="login.html" ><li id="inactive" >SIGN IN</li></a>
+              <a href="register.html"><li id="inactive">REGISTER</li></a>
+          </div>
+  </div>
         
   
-    <div class="slideshow-container">
+  <div class="slideshow-container">
+
+    <div class="mySlides fade" style="display: block">
+      <div class="numbertext">1 / 5</div>
+      <img src="img/no-time-to-die.jpg">
+      <div class="text">No Time To Die</div>
+    </div>
 
     <div class="mySlides fade">
-    <div class="numbertext">1 / 5</div>
-    <img src="Spiderman.jpg" style="width:300px;height:150px;">
-    <div class="text">Spiderman No Way Home</div>
-  </div>
+      <div class="numbertext">2 / 5</div>
+      <img src="img/spider-man.jpg">
+      <div class="text">Spider Man: No Way Home</div>
+    </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 5</div>
-    <img src="House_of_Gucci.jpg">
-    <div class="text">House of Gucci</div>
-  </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="img/f9.jpg">
+      <div class="text">Fast & Furious 9</div>
+    </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 5</div>
-    <img src="img3.jpg">
-    <div class="text">Caption Three</div>
-  </div>
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 5</div>
+      <img src="img/the-green-knight.jpg">
+      <div class="text">The Green Knight</div>
+    </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <img src="img3.jpg">
-    <div class="text">Caption Three</div>
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 5</div>
+      <img src="img/dune.jpeg">
+      <div class="text">Dune</div>
+    </div>
+      
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
-  <div class="mySlides fade">
-    <div class="numbertext">5 / 5</div>
-    <img src="img3.jpg">
-    <div class="text">Caption Three</div>
-  </div>
-        
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
 <br>
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
+<div style="text-align: center;">
+  <span class="dot active" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
   <span class="dot" onclick="currentSlide(4)"></span>

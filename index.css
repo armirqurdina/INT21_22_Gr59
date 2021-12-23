@@ -30,6 +30,7 @@
 #inactive:hover{
     border-color: white;
 }
+
 .log-reg{
     display: inline-block;
 }
@@ -43,8 +44,9 @@
     border-radius: 20px;
     color: #0D1623;
 }
+
 .slideshow-container {
-  max-width: 1000px;
+  width: 80%;
   position: relative;
   margin: auto;
 }
@@ -53,12 +55,10 @@
   display: none;
 }
 
-img
+.mySlides img
 {
   margin:0;
-  margin-right:400px;
-  width:1050px;
-  height:400px;
+  width: 100%;
 
 }
 
@@ -87,13 +87,17 @@ img
 }
 
 .text {
+  font-family: Arial;
   color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+  font-size: 18px;
+  font-weight: bold;
   position: absolute;
-  bottom: 8px;
+  padding: 10px 0px;
+  bottom: 4px;
   width: 100%;
   text-align: center;
+  background: rgba(0,0,0,0.6);
+
 }
 
 .numbertext {
@@ -107,25 +111,26 @@ img
 
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 14px;
+  width: 14px;
   margin: 0 2px;
-  background-color: #bbb;
+  background: none;
+  border: 1px solid white;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: 0.5s;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: white;
 }
 
 
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 0.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
 }
 
 @-webkit-keyframes fade {
