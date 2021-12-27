@@ -12,60 +12,34 @@ img
     height: auto;
 
 }
-p1
-{
-
-  margin-right:150px;
-  color:white;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:35px;
-  text-decoration: dotted;
-  position: top;
-
-}
-button
-{
-    text-decoration:none;
-    display: inline-block;
-    border: 1px solid #0D1623;
-    margin-right:150px;
-    border-radius: 15px;
-    padding: 6px 25px;
-    font-size: 22px;
-    font-family: Arial;
-    text-align:center;
-    
-
-}
 
 .input-box{
+    width: 250px;
+    height: 15px;
+    border: 0px;
     font-family:arial;
-    padding-top:300px;
-    font-weight:bold;
     font-size:16px;
-    width:20%;
-    padding:12px;
-    border-radius:8px;
-    box-sizing:border-box;
-    margin-top:4px;
-    margin-bottom:7px;
-}
-    .registerbtn
-{
-    margin-top:70px;
-    margin-left:150px;
-    text-decoration:none;
-    display: inline-block;
-    border: 1px solid #0D1623;
-    border-radius: 10px;
-    padding: 6px 10px;
-    max-height:40px;
-    max-width:150px;
-    font-size: 22px;
-    font-family: Arial;
-    text-align:center;
-    
+    padding: 12px;
+    border-radius:5px;
+    border: 1px solid #ddd;
+}   
 
+.btn
+{
+    background-color: #173E7D;
+    border: 1px solid #173E7D;
+    color: white;
+    text-decoration:none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 8px 20px;
+    font-family: Arial;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    border: 1px solid white;
 }
 
 .pure-button_pure-button-primary
@@ -76,20 +50,34 @@ button
     font-size:20px;
 }
 
-
-.registerbtn:hover {
-    opacity:1;
-  }
-
-
 .two
 {   
-    color:white;
     font-family:Arial, Helvetica, sans-serif;
-    font-size:20px;
+    font-size:16px;
+}
 
-    
+.main-content-container{
+    background: none; 
+    width: 30%; 
+    margin: 0 auto; 
+    padding: 10px; 
+    box-shadow: 0px 0px 20px black; 
+    margin-top: 50px;
+}
 
+.main-content{
+    color: white;
+    margin: 0 auto;
+    width: fit-content;
+}
 
+.main-content input, .main-content select {
+    background-color: #ddd;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    float: left;
+}
 
+.main-content label{
+    float: left;
 }
