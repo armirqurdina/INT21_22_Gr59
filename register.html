@@ -47,32 +47,40 @@
     </div>
     
     <form>
-        <div style="background: none; width: 40%; margin: 0 auto; padding: 10px; box-shadow: 0px 0px 20px black; margin-top: 50px;">
+        <div class="main-content-container">
             <div class="main-content">
                 <h1>Create an account</h1><br><br><br>
+
                 <label for="fname">First name</label><br>
                 <input type="text" placeholder="Enter first name" class="input-box" id="fname" name="fname" required><br> 
+
                 <label for="lname">Last name</label><br>
                 <input type="text" placeholder="Enter last name" class="input-box" id="lname" name="lname"  required><br>
-                <label for="pwd">Password</label><br>
-                <input type="password" placeholder="Enter password" class="input-box" id="pwd" name="pwd"><br>
-                <label for="confirm_password">Confirm password</label><br>
-                <input type="password" placeholder="Confirm password" class="input-box" id="confirm_password" required><br>
+                
                 <label for="email">Email address</label><br>
                 <input type="text" placeholder="Enter email address" class="input-box" id="email" name="adress" required><br>
+
+                <label for="pwd">Password</label><br>
+                <input type="password" placeholder="Enter password" class="input-box" id="pwd" name="pwd"><br>
+
+                <label for="confirm_password">Confirm password</label><br>
+                <input type="password" placeholder="Confirm password" class="input-box" id="confirm_password" required><br>
+
                 <label for="date">Date of birth</label><br>
                 <input type="date" class="input-box" id="date" name="date"><br>
+
                 <label for="gender">Gender</label><br>
                 <select class="input-box" style="height: 42px; background-color: #ddd; width: 424px" id="gender">
                     <option>Male</option>
                     <option>Female</option>
                     <option>Other</option>
                 </select><br>
+
                 <label for="phone">Phone number</label><br>
                 <input type="tel" placeholder="Enter phone number" class="input-box" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br><br>
 
-                <button type="submit" class="registerbtn"> Register</button><br><br><br>
-                <p class="two">Already have an account? <span><a style="text-decoration: none; color: dodgerblue" href="login.html">Login</a></span></p>
+                <button type="submit" class="registerbtn"> Register</button><br><br>
+                <p class="two">Already have an account? <span><a style="text-decoration: underline; color: white; font-weight: bold;" href="login.html">Login</a></span></p>
             </div>
         </div>
     </form>   
